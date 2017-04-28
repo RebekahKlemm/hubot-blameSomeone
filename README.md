@@ -1,8 +1,6 @@
 # hubot-blamesomeone
 
-A hubot script that does the things
-
-See [`src/blamesomeone.coffee`](src/blamesomeone.coffee) for full documentation.
+A hubot script that blames a random user in your slack group whenever someone uses the words "sorry", "blame", or "fault"
 
 ## Installation
 
