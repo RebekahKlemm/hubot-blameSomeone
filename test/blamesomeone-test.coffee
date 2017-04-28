@@ -12,11 +12,11 @@ describe 'blamesomeone', ->
   afterEach ->
     @room.destroy()
 
-  it 'responds to hello', ->
-    @room.user.say('alice', '@hubot hello').then =>
+  it 'responds to blame', ->
+    @room.user.say('alice', 'blame').then =>
       expect(@room.messages).to.eql [
-        ['alice', '@hubot hello']
-        ['hubot', '@alice hello!']
+        ['alice', 'blame']
+        ['hubot', 'Blame Robbie']
       ]
 
   it 'hears orly', ->
