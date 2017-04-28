@@ -21,8 +21,8 @@ Then add **hubot-blamesomeone** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> sorry I forgot to pick up the donuts
+hubot>> Blame Joe
 ```
 
 ## NPM Module
