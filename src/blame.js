@@ -2,6 +2,7 @@ module.exports = function(robot) {
 
   var blamepeople = [];
 
+  // get current users in the slack room
   function getUsers(){
     if(robot.brain.data.users){
       for (var user in robot.brain.data.users){
@@ -13,17 +14,17 @@ module.exports = function(robot) {
 
   robot.hear('blame', function(msg){
     getUsers();
-    msg.send('Blame ' + msg.random(robot.brain.data._private.blamepeople));
+    msg.send('Blame ' + msg.random(robot.brain.get('blamepeople')));
   });
 
   robot.hear('sorry', function(msg){
     getUsers();
-    msg.send('Blame ' + msg.random(robot.brain.data._private.blamepeople));
+    msg.send('Blame ' + msg.random(robot.brain.get('blamepeople')));
+
   });
 
   robot.hear('fault', function(msg){
     getUsers();
-    msg.send('Blame ' + msg.random(robot.brain.data._private.blamepeople));
+    msg.send('Blame ' + msg.random(robot.brain.get('blamepeople')));
   });
-
 };
