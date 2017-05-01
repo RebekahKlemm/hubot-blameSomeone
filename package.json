@@ -1,7 +1,7 @@
 {
   "name": "hubot-blamesomeone",
   "description": "A hubot script that does the things",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Rebekah Klemm <rebekah_klemm@yahoo.com>",
   "license": "MIT",
   "keywords": "blame",
