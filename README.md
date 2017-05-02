@@ -20,7 +20,7 @@ Then add **hubot-blamesomeone** to your `external-scripts.json`:
 
 ```
 user1>> sorry I forgot to pick up the donuts
-hubot>> Blame Joe
+hubot>> Blame @joe
 ```
 
 ## NPM Module
