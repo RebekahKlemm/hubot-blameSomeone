@@ -7,10 +7,10 @@
   "keywords": "blame",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-blamesomeone.git"
+    "url": "https://github.com/RebekahKlemm/hubot-blameSomeone"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-blamesomeone/issues"
+    "url": "https://github.com/RebekahKlemm/hubot-blameSomeone"
   },
   "dependencies": {},
   "peerDependencies": {
