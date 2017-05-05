@@ -12,18 +12,7 @@ module.exports = function(robot) {
     robot.brain.set('blamepeople', blamepeople);
   }
 
-  robot.hear(' blame ', function(msg){
-    getUsers();
-    msg.send('Blame @' + msg.random(robot.brain.get('blamepeople')));
-  });
-
-  robot.hear(' sorry ', function(msg){
-    getUsers();
-    msg.send('Blame @' + msg.random(robot.brain.get('blamepeople')));
-
-  });
-
-  robot.hear(' fault ', function(msg){
+  robot.hear(/blame|^fault|sorry/ig, function(msg){
     getUsers();
     msg.send('Blame @' + msg.random(robot.brain.get('blamepeople')));
   });
